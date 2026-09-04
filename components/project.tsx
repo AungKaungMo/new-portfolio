@@ -1,7 +1,13 @@
 "use client";
 
+import Image, { type StaticImageData } from "next/image";
 import { useState } from "react";
 import { ArrowUpRight, Lock, Plus } from "lucide-react";
+import momImage from "@/app/assets/images/mom.png";
+import owayTravelImage from "@/app/assets/images/owaytravel.png";
+import rezervImage from "@/app/assets/images/rezerv.png";
+import teaTalkImage from "@/app/assets/images/teatalk.jpg";
+import tisImage from "@/app/assets/images/tis.png";
 import { GithubIcon } from "@/components/brand-icons";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
@@ -11,7 +17,7 @@ type WorkItem = {
   title: string;
   year: string;
   summary: string;
-  image?: string;
+  image?: StaticImageData;
   placeholder: string;
   did: string[];
   stack: string;
@@ -36,7 +42,7 @@ const WORK: WorkItem[] = [
     ],
     stack: "TypeScript · Next.js · React · Recoil . Tailwind CSS · MUI · Stripe · AI Prompting · Claude",
     result: "Contributed to a platform used by 1,000+ studios across Southeast Asia.",
-    image: "/assets/images/rezerv.png",
+    image: rezervImage,
     live: "https://www.rezerv.co/",
   },
   {
@@ -52,7 +58,7 @@ const WORK: WorkItem[] = [
     ],
     stack: "React · Next.js . Redux · Zustand · SASS · Prerender.io . AWS",
     result: "Stronger SEO · smoother payment flows · more maintainable frontend architecture",
-    image: "/assets/images/owaytravel.png",
+    image: owayTravelImage,
     live: "https://www.owaytravel.com/",
   },
   {
@@ -68,14 +74,14 @@ const WORK: WorkItem[] = [
     ],
     stack: "Vue · Laravel · MySQL . Redis · Docker · Rest API · Odoo API",
     result: "Faster internal workflows · loading time reduced to roughly one-third",
-    image: "/assets/images/tis.png",
+    image: tisImage,
   },
   {
     title: "Meeting Management System",
     year: "2023 — 2024",
     summary:
       "An internal platform for room scheduling, real-time availability, meeting minutes, and monthly reporting.",
-    image: "/assets/images/mom.png",
+    image: momImage,
     placeholder: "Meeting dashboard and room availability screens",
     did: [
       "Built the full-stack system and integrated Odoo data for real-time room availability.",
@@ -91,7 +97,7 @@ const WORK: WorkItem[] = [
     year: "2023 — 2024",
     summary:
       "A local social platform for sharing content, connecting communities, and purchasing in-app credits.",
-    image: "/assets/images/teatalk.jpg",
+    image: teaTalkImage,
     placeholder: "TeaTalk social feed and payment screens",
     did: [
       "Led two junior developers, assigned work, set timelines, and delivered the project on schedule.",
@@ -152,10 +158,12 @@ function WorkRow({ item }: { item: WorkItem }) {
         <div className="min-h-0 overflow-hidden">
           <div className="grid grid-cols-1 items-start gap-7 pb-1.5 pt-5 sm:grid-cols-[260px_1fr]">
             {item.image ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Image
                 src={item.image}
-                alt={item.title}
+                alt={`${item.title} project preview`}
+                sizes="(max-width: 639px) calc(100vw - 32px), 260px"
+                placeholder="blur"
+                loading="lazy"
                 className="h-42 w-full rounded-lg object-cover ring-1 ring-pf-line"
               />
             ) : (
