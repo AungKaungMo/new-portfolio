@@ -30,7 +30,7 @@ export function Home() {
             </div>
 
             <h1 className="mb-7 max-w-[20ch] text-[34px] font-medium leading-[1.14] tracking-[-0.03em] text-pretty sm:text-[44px] lg:text-[52px]">
-              I&apos;m Aung Kaung Moe — a software engineer who builds products that feel{" "}
+              I&apos;m Aung Kaung Moe, a software engineer who builds products that feel{" "}
               <span
                 className="[box-shadow:inset_0_-2px_0_var(--pf-sky)]"
                 style={{
