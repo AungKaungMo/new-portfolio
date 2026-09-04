@@ -1,8 +1,6 @@
 import { FileUser } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 const TAGS = ["TypeScript", "Python", "React", "Vue", "Next", "Node", "Laravel", "SQL", "AWS"];
 
 const STATS = [
@@ -50,7 +48,7 @@ export function Home() {
 
             <div className="flex flex-wrap items-center gap-3.5">
               <a
-                href={`${BASE_PATH}/assets/pdf/akm-resume.pdf`}
+                href="/assets/pdf/akm-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex cursor-pointer items-center gap-2 rounded-lg text-white border border-pf-sky bg-pf-sky px-4.75 py-2.75 font-heading text-sm font-medium transition-[box-shadow,transform,filter] duration-200 hover:-translate-y-px hover:brightness-110 hover:shadow-[0_6px_26px_var(--pf-sky-tint)]"

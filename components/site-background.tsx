@@ -1,5 +1,4 @@
 const MASK = "linear-gradient(to bottom, #000 0%, #000 46%, transparent 82%)";
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 /**
  * Fixed decorative layers behind all content: the tiled line-grid pattern and
@@ -12,7 +11,7 @@ export function SiteBackground() {
       <div
         className="absolute inset-0 bg-repeat opacity-75"
         style={{
-          backgroundImage: `url('${BASE_PATH}/assets/images/line-grid.svg')`,
+          backgroundImage: "url('/assets/images/line-grid.svg')",
           backgroundSize: "1600px 1000px",
           backgroundPosition: "center top",
           maskImage: MASK,

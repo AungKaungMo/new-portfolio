@@ -7,8 +7,6 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { cn } from "@/lib/utils";
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 type WorkItem = {
   title: string;
   year: string;
@@ -156,7 +154,7 @@ function WorkRow({ item }: { item: WorkItem }) {
             {item.image ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={`${BASE_PATH}${item.image}`}
+                src={item.image}
                 alt={item.title}
                 className="h-42 w-full rounded-lg object-cover ring-1 ring-pf-line"
               />
