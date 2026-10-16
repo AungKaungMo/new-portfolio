@@ -13,15 +13,10 @@ const ROLES = [
     body: "Worked with PMs and backend engineers to modernize legacy web flows, improve SEO, and build loyalty and local-payment features.",
   },
   {
-    period: "Jun 2023 — Mar 2025",
+    period: "Mar 2023 — Mar 2025",
     title: "Junior → Senior Web Developer · UMG",
     body: "Built full-stack internal systems, led junior developers, managed private-server deployments, and reduced API traffic and load times with Redis caching.",
-  },
-  {
-    period: "Feb 2023 — Jun 2023",
-    title: "Web Developer Intern · ExBrain Co.Ltd",
-    body: "Learned Vue.js through production work, collaborated with the development team, and developed disciplined coding habits under senior mentorship.",
-  },
+  }
 ];
 
 export function Experiences() {
