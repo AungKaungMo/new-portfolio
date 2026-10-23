@@ -27,11 +27,10 @@ export function About() {
                 weekly JavaScript and PHP assignments prepared me for my first
                 internship in 2023.
                 <br/>
-                I later grew from a Junior to Senior Web
-                Developer at UMG, taking on full-stack development, deployments,
-                and mentoring junior developers. At Oway Travel, I taught myself
-                Next.js while building a new loyalty system. Today, I work on
-                B2B SaaS products at Rezerv, turning complex requirements into
+                At UMG, I grew from a junior developer into someone trusted with 
+                full-stack features, deployments, and production systems. At Oway Travel, 
+                I taught myself Next.js while building a new loyalty system. Today, I work 
+                on B2B SaaS products at Rezerv, turning complex requirements into
                 useful production features.
                 <br/>
                 I’ve learned that not knowing

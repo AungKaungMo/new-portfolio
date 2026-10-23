@@ -10,12 +10,12 @@ const ROLES = [
   {
     period: "Mar 2025 — Sep 2025",
     title: "React Developer · Oway Travel",
-    body: "Worked with PMs and backend engineers to modernize legacy web flows, improve SEO, and build loyalty and local-payment features.",
+    body: "Worked with PMs and backend engineers to modernize legacy web flows, improve SEO, and build loyalty.",
   },
   {
-    period: "Mar 2023 — Mar 2025",
-    title: "Junior → Senior Web Developer · UMG",
-    body: "Built full-stack internal systems, led junior developers, managed private-server deployments, and reduced API traffic and load times with Redis caching.",
+    period: "Jun 2023 — Mar 2025",
+    title: "Web Developer · UMG",
+    body: "Built full-stack internal systems, managed private-server deployments, and reduced API traffic and load times with Redis caching.",
   }
 ];
 

@@ -1,13 +1,13 @@
 import { FileUser } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
-const TAGS = ["TypeScript", "Python", "React", "Vue", "Next", "Node", "Laravel", "SQL", "AWS"];
+const TAGS = ["TypeScript", "Python", "React", "Vue", "Next", "Node", "Laravel", "SQL"];
 
 const STATS = [
   { value: "3+", label: "Years shipping" },
-  { value: "[9]", label: "Products in prod" },
+  { value: "[5]", label: "Products in prod" },
   { value: "[99.9]%", label: "Uptime held" },
-  { value: "[5]", label: "Teams shipped with" },
+  { value: "[3]", label: "Teams shipped with" },
 ];
 
 export function Home() {
@@ -22,12 +22,12 @@ export function Home() {
       <div className="mx-auto max-w-230 px-4 sm:px-8">
         <Reveal immediate>
           <section className="relative pt-20 sm:pt-26">
-            <div className="mb-7.5 inline-flex items-center gap-2 rounded-full border border-pf-line py-1.25 pl-2.5 pr-3">
+            {/* <div className="mb-7.5 inline-flex items-center gap-2 rounded-full border border-pf-line py-1.25 pl-2.5 pr-3">
               <span className="h-1.5 w-1.5 animate-pf-pulse rounded-full bg-pf-sky" />
               <span className="text-[11.5px] tracking-wider text-pf-muted">
                 Open to [full-time / part-time] work
               </span>
-            </div>
+            </div> */}
 
             <h1 className="mb-7 max-w-[20ch] text-[34px] font-medium leading-[1.14] tracking-[-0.03em] text-pretty sm:text-[44px] lg:text-[52px]">
               I&apos;m Aung Kaung Moe, a software engineer who builds products that feel{" "}
@@ -43,7 +43,7 @@ export function Home() {
             </h1>
 
             <p className="mb-8.5 max-w-[58ch] text-[16px] leading-[1.7] text-pf-body text-pretty sm:text-[18px]">
-              Nearly four years in product engineering, now focused on SaaS, product growth, and turning code into revenue. I’m exploring how AI can remove friction, unlock new workflows, and make software more capable.
+              Three years in product engineering, now focused on SaaS, product growth, and turning code into revenue. I’m exploring how AI can remove friction, unlock new workflows, and make software more capable.
             </p>
 
             <div className="flex flex-wrap items-center gap-3.5">

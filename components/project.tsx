@@ -53,8 +53,8 @@ const WORK: WorkItem[] = [
     placeholder: "Oway Travel booking flow and operations dashboard",
     did: [
       "Improved SPA discoverability through prerendered SEO and modernized legacy dashboard workflows.",
-      "Built loyalty features and integrated AYA and KBZ payments across complex booking states.",
-      "Led a junior developer and simplified state management by migrating complex Redux flows to Zustand.",
+      "Built loyalty features and handle complex state management.",
+      "implified state management by migrating Redux to Zustand, reducing boilerplate and improving maintainability.",
     ],
     stack: "React · Next.js . Redux · Zustand · SASS · Prerender.io . AWS",
     result: "Stronger SEO · smoother payment flows · more maintainable frontend architecture",
@@ -63,7 +63,7 @@ const WORK: WorkItem[] = [
   },
   {
     title: "Training Internal System",
-    year: "2023 - 2024",
+    year: "2023 - 2025",
     summary:
       "An internal platform for managing employee training, class enrollment, attendance, reviews, and performance.",
     placeholder: "Training dashboard and employee performance screens",
@@ -78,7 +78,7 @@ const WORK: WorkItem[] = [
   },
   {
     title: "Meeting Management System",
-    year: "2023 — 2024",
+    year: "2023 — 2025",
     summary:
       "An internal platform for room scheduling, real-time availability, meeting minutes, and monthly reporting.",
     image: momImage,
@@ -100,7 +100,6 @@ const WORK: WorkItem[] = [
     image: teaTalkImage,
     placeholder: "TeaTalk social feed and payment screens",
     did: [
-      "Led two junior developers, assigned work, set timelines, and delivered the project on schedule.",
       "Integrated Dinger payments and built the purchasing, balance, and transaction logic for the ICE credit system.",
       "Built with React, Node.js, and SQL, then deployed and managed production services using PM2 and Nginx.",
     ],
